@@ -2,14 +2,13 @@
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
-# Interactive Pricing Component
-
 Welcome to the Interactive Pricing Component project! This project is a solution to a Frontend Mentor challenge, developed using HTML, JavaScript for interactivity, and TailwindCSS for styling. It is designed to be user-friendly, responsive, and easily customizable. This project is open-source, so feel free to use and modify it as you see fit.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
+- [Technologies](#technologies)
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -30,9 +29,15 @@ This project is an interactive pricing component designed to meet the requiremen
 - **TailwindCSS:** Utilizes TailwindCSS for styling, making it easy to customize.
 - **Open Source:** The project is open-source and can be used and modified by anyone.
 
+## Technologies
+
+- **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)**
+- **[CSS (TailwindCSS)](https://tailwindcss.com)**
+- **[Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**
+
 ## Demo
 
-You can view a live demo of the project [here](#). (Replace `#` with the link to your live demo)
+You can view a live demo of the project [here](https://interactive-pricing-component-main-bice-ten.vercel.app/).
 
 ## Installation
 
