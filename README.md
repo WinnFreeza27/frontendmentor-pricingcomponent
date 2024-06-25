@@ -41,7 +41,7 @@ You can view a live demo of the project [here](https://interactive-pricing-compo
 
 ## Installation
 
-To get a local copy up and running, follow these simple steps:
+To get a local copy up and running, follow these steps:
 
 1. **Clone the repository:**
    ```sh
@@ -53,10 +53,24 @@ To get a local copy up and running, follow these simple steps:
    cd interactive-pricing-component
    ```
 
-3. **Open `index.html` in your browser:**
+3. **Install Node modules (for TailwindCSS):**
    ```sh
-   open index.html
+   npm install
    ```
+
+4. **Build TailwindCSS:**
+   ```sh
+   npm run build
+   ```
+
+5. **Open `index.html` in your browser:**
+   - You can open `index.html` directly in your browser or use a development server of your choice.
+
+This will set up the necessary environment to build and use TailwindCSS for styling in the project.
+
+---
+
+This updated guide should help users understand the specific setup required to utilize TailwindCSS within your Interactive Pricing Component project.
 
 ## Usage
 
