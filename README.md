@@ -68,10 +68,6 @@ To get a local copy up and running, follow these steps:
 
 This will set up the necessary environment to build and use TailwindCSS for styling in the project.
 
----
-
-This updated guide should help users understand the specific setup required to utilize TailwindCSS within your Interactive Pricing Component project.
-
 ## Usage
 
 You can use this project as a template for your own interactive components. Modify the HTML, JavaScript, and TailwindCSS to suit your needs. Here are some tips to get you started:
