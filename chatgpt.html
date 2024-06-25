@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Pricing Slisder</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #price {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  input[type="range"] {
+    width: 100%;
+    height: 10px;
+    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+    appearance: none; /* Remove default styling for non-WebKit browsers */
+    background: #ddd; /* Gray background */
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+  }
+  input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: red;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #1f618d;
+}
+  /* Style for the slider thumb (handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db; /* Background color for the icon */
+    background-image: url('/images/icon-slider.svg'); /* Add the icon image here */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid #fff; /* Border around the icon */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  input[type="range"].active::-webkit-slider-runnable-track {
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  /* Style for the slider thumb (handle) in Firefox */
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db; /* Background color for the icon */
+    background-image: url('/images/icon-slider.svg'); /* Add the icon image here */
+    background-position: center;
+    background-size: fit;
+    background-repeat: no-repeat;
+    border: 2px solid #fff; /* Border around the icon */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Interactive Pricing Slider</h1>
+  <div>
+    <label for="slider">Select a price:</label>
+    <input type="range" id="slider" step="1">
+  </div>
+  <div id="price">$50</div>
+</div>
+<script>
+  const minPrice = 10;
+  const maxPrice = 100;
+
+  const slider = document.getElementById('slider');
+  const priceDisplay = document.getElementById('price');
+  
+  slider.min = minPrice;
+  slider.max = maxPrice;
+  slider.value = (minPrice + maxPrice) / 2; // Set initial value to midpoint
+
+  slider.addEventListener('input', () => {
+    const selectedPrice = slider.value;
+    priceDisplay.textContent = `$${selectedPrice}`;
+  });
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .slider-container {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+</style>
+<title>Styled Slider</title>
+</head>
+<body>
+  <div class="slider-container">
+    <h2>Styled Slider</h2>
+    <input type="range" class="slider in-range:border-green-500" min="0" max="100" value="0" id="mySlider">
+  </div>
+  <script>
+    const slider = document.getElementById('mySlider');
+    slider.addEventListener('input', () => {
+      const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+      slider.style.background = `linear-gradient(to right, #3498db 0%, #3498db ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
+    });
+  </script>
+</body>
+</html>
